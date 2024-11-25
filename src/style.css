@@ -357,16 +357,30 @@ overflow: hidden!important;
   #page2{
     background-color: red!important;
   }
+  #animation{
+    position: relative;
+  }
   #animation #hero{
-    background-color: red;
     position: relative!important;
   } 
- 
+ #animation #nav{
+  height: 10vh;
+  width: 100%;
+  padding: 0 1vh;
+ }
+ #navleft{
+  padding: 0 10px;
+  justify-content: start!important;
+ }
+ #animation #nav #navleft h2{
+  font-size: 25px;
+  
+ }
   #navright{
     width: 3vh;
+    display: none!important;
   }
   #navcenter{
-    background-color: red!important;
     display: none!important;
   }
   
@@ -434,8 +448,8 @@ overflow: hidden!important;
     cursor: pointer;
 }
 #selector .div img{
-    width: 4vh!important;
-    height: 4vh!important;;
+    width: 3vh!important;
+    height: 3vh!important;;
     cursor: pointer;
     object-fit: cover;
     object-position: center;
@@ -465,30 +479,29 @@ overflow: hidden!important;
   #infoone{
     /* display: none; */
     /* transform: translateX(0)!important; */
-    width: 40vh !important; ;
+    width: 30vh !important; ;
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.094);
     color: #fff;
-    padding-left: 2%;
-    padding-right:3%;
+    padding-left: 3.5%!important;
+    padding-right:  2% !important;;
     padding-top: 25%!important;
     text-align: right;
     position: absolute;
-    left: 0%!important;
-    top: 0%!important;
+    
   }
   #animation #infoone h1{
     font-size: 5vh;
     font-family: por3;
 }
 #animation #infoone img{
-    width: 4vh!important;
-    height: 4vh!important;
+    width: 2vh!important;
+    height: 2vh!important;
 }
 #animation #infoone #text2 #img{
-  height: 15vh;
+  height: 13vh;
   overflow: hidden;
-  height: 15vh;
+  height: 13vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -500,27 +513,27 @@ overflow: hidden!important;
   object-fit: contain!important;
 }
 #animation #infotwo img{
-    width: 4vh!important;
-    height: 4vh!important;
+    width: 2vh!important;
+    height: 2vh!important;
 }
 #animation #infoone h2{
-    font-size: 3vh!important;
+    font-size: 2.3vh!important;
     font-family: por3;
 }
 #animation #infoone h3{
-    font-size: 1.6vh!important;
+    font-size: 1.3vh!important;
     color: rgb(170, 170, 170);
     white-space: nowrap;
     font-family: por1;
 }
 #animation #infoone h3 span{
-    font-size: 1.6vh!important;
+    font-size: 1.3vh!important;
     margin-left: 2%;
     color: white;
 }
   #infotwo{
     /* display: none; */
-    width:40vh !important;
+    width:30vh !important;
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.229);
     color: #fff;
@@ -529,8 +542,7 @@ overflow: hidden!important;
     padding-right:3%;
     padding-top: 25%!important;
     position: absolute;
-    right: 0!important;
-    top: 0!important;
+
     padding-top: 5%;
   }
   #animation #infotwo h1{
@@ -539,31 +551,29 @@ overflow: hidden!important;
 }
 
 #animation #infotwo h2{
-    font-size: 3vh!important;
+    font-size: 2.7vh!important;
     font-family: por3;
 }
 #animation #infotwo h3{
-    font-size: 1.6vh!important;
+    font-size: 1.4vh!important;
     color: rgb(170, 170, 170);
     white-space: nowrap;
     font-family: por1;
 }
 #animation #infotwo h3 span{
-    font-size: 1.6vh!important;
+    font-size: 1.4vh!important;
     margin-left: 2%;
     color: white;
 }
  
   #animation #infothree{
-    width: 43vh !important; ;
+    width: 30vh !important; ;
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.106);
     color: #fff;
     padding-left: 2%;
     padding-right:3%;
     position: absolute;
-    left: 0!important;
-    top: 0!important;
     padding-top: 25%!important;
     /* transform: translateX(-105%)!important; */
     padding-top: 5%;
@@ -582,7 +592,7 @@ overflow: hidden!important;
     padding: 2%;
 }
 #animation #infothree #image{
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     display: flex;
     padding: 2%;
@@ -598,7 +608,7 @@ overflow: hidden!important;
     font-family: por2;
 }
 #animation #infofour{
-    width:40vh !important;
+    width:30vh !important;
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.259);
     color: #fff;
@@ -607,13 +617,12 @@ overflow: hidden!important;
     padding-right:3%;
     padding-top: 5%;
     position: absolute;
-    right: 0!important;
-    top: 0!important;
+
     padding-top: 25%!important;
 }
 
 #animation #infofour h1{
-    font-size: 5.2vh;
+    font-size: 5vh;
     font-family: por3;
 }
 
@@ -644,7 +653,7 @@ overflow: hidden!important;
 #infofive{
   /* display: nfive; */
   /* transform: translateX(0)!important; */
-  width: 40vh !important; ;
+  width: 30vh !important; ;
   height: 100vh;
   background-color:rgba(0, 0, 0, 0.094);
   color: #fff;
@@ -653,16 +662,15 @@ overflow: hidden!important;
   padding-top: 25%!important;
   text-align: right;
   position: absolute;
-  left: 0%!important;
-  top: 0%!important;
+
 }
 #animation #infofive h1{
-  font-size: 5vh;
+  font-size: 4.9vh;
   font-family: por3;
 }
 #animation #infofive img{
-  width: 4vh!important;
-  height: 4vh!important;
+  width:3.5vh!important;
+  height:3.5vh!important;
 }
 #page2 .container{
   display: none!important;
@@ -698,35 +706,20 @@ object-fit: center!important;
 }
 #hero #selector{
     width: 100%;
-    height: 30vh!important;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color:rgba(0, 0, 0, 0.033);
-    position: fixed;
-    top: 70%!important;
-    left: 0%;
-     cursor: pointer;
-    gap: 2%;
-    z-index: 999999999999999999999999999999999999999999999999999999999!important;
+    justify-content: end!important;
+    padding-bottom: 15%;
+    padding-top: 50%!important;
 }
-
-#loading #elem{
-    width: 35vw!important;
+#selector #carchange {
+  display: none!important;
 }
-#loading #elem img{
-    width: 13vh!important;
-    height: 13vh!important;
-
+#selector #carchange button img{
+  scale: 1!important;
 }
-#loading #elem:nth-child(2){
-display: none!important;
-}
-#loading #elem:nth-child(5){
-    display: none!important;
-    }
-    .footer-content {
+  .footer-content {
       margin-left: auto!important;
       margin-right: auto!important;
       max-width: 1230px!important;
@@ -851,47 +844,89 @@ a.effect-underline{
     position: relative;
 }
 #loading{
-    position: fixed!important;
+    position: absolute!important;
     left: 0%!important;
     top: 0%!important;
     width: 100vw;
     display: flex;
-    height: 100vh;
-    /* display: none; */
-    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999!important;
-}
-#loading #elem{
-    width: 20vw;
-    height: 100%;
-    background-color: #000000;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-#loading #elem:nth-child(1){
-    color: white;
-    font-family: nike;
-    font-size: 10vh;
-}
-#loading #elem:nth-child(3){
-    display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    /* display: none; */
+    background-color: black;
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999!important;
 }
-#loading #elem:nth-child(3) video{
+
+#loading .center-loading{
+  width: 37%;
+  height: 100vh;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+  background-color: wheat;
+}
+#loading .center-loading .text  .image{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#loading .center-loading .text .image img{
+  height: 80%;
+  width: 30%;
+  object-fit: contain;
+  object-position: center;
+  transform: translateY(-112%);
+  filter: invert(1);
+}
+#loading .center-loading .text{
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  font-size: 30px;
+  
+  text-transform: uppercase;
+}
+#loading .center-loading .text h2{
+  font-weight: 900;
+  font-family:nike ;
+}
+#loading .center-loading .progress{
+  width: 100%;
+  height: 0.4vh;
+}
+#loading .center-loading .progress-div{
+  background-color: gray;
+  width: 100%;
+  height: 0.4vh;
+}
+#loading .center-loading .progress-div .progress-bar{
+  height: 100%;
+  width: 0%;
+  display: flex;
+  justify-content: end;
+  background-color: white;
+}
+
+/* #loading #elem:nth-child(3) video{
     width: 20vh;
     height: 20vh;
     overflow: visible;
     object-fit: cover;
     object-position: center;
-}
-#loading #elem:nth-child(3) #dib{
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
- bottom: 28%;
-}
-#loading #elem:nth-child(3) #dib h2{
+} */
+
+/* #loading #elem:nth-child(3) #dib h2{
   font-size: 2vh;
   font-family: por1;
   color: #fff;
@@ -909,7 +944,7 @@ a.effect-underline{
   height: 100%;
   background-color: #888;
   border-radius: 25px;
-}
+} */
 .carload{
   width: 100%;
   height: 100vh;
@@ -933,7 +968,7 @@ a.effect-underline{
 #animation #hero {
     width: 100vw;
     height: 100vh;
-    position: fixed ;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     left: 0;
@@ -2406,185 +2441,5 @@ footer .item > svg {
   color: #f0f0f0;
 }
 
-.menu-overlay,
- .menu-overlay2 {
-  position: fixed!important; /* Changed from absolute to fixed for full-screen overlays */
-  top: 0;
-  left: -100vw;
-  width: 65vw;
-  display: flex;
-  height: 100vh;
-  background-color: #141414 !important;
-  z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999!important; /* Ensure overlays stack correctly */
-}
-
-/* .menu-overlay {
-} */
-
-.menu-overlay2 {
-  z-index: 2; /* Ensure it appears above the first overlay */
-}
 
  
-
-
-.menu-con-1{
-  width: 35%;
-  padding: 5vw 3vw;
-}
-
-.menu-con-1 h3 {
-  margin: 20px 0;
-  cursor: pointer;
-  padding: 13px;
-  color: #ddd;
-  border-radius: 5px;
-  font-weight: 400;
-  font-size: 1.5vw;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
-.menu-con-1 h3.active {
-  background-color: #ffffff27;
-}
-
-.menu-con-1 h3:hover {
-  background-color:#ffffff10;
-  transform: scale(1.05);
-}
-
-.menu-con-2 {
-  width: 53% !important;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  background-color: #191919;
-  height: 100vh; /* Adjust height as needed */
-}
-
-.menu-con-2 .content {
-  position: absolute;
-  width: 70%;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-.menu-con-2 .content.active {
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-.menu-con-2 .content.exiting {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-
-.menu-con-2 img {
-  width:15vw !important ;
-  height: 14vh !important;
-  display: flex !important;
-  /* gap: 2vw !important; */
-  margin:2vw !important;
-  border: none !important;
-  /* border-radius: 8px; */
-  transition: transform 0.3s;
-  margin-left: 10vw !important;
-}
-
-.menu-con-2 img:hover {
-  transform: scale(1.05);
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 100;
-  color: #fff;
-}
-
-.close-btn:hover {
-cursor: pointer;
-}
-
-.open-btn {
-  cursor: pointer;
-}
-.menu-con-2 {
-  width: 35%;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  height: 100vh; /* Adjust height as needed */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-con-2 .content {
-  position: absolute;
-  width: 100%;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0;
-  transform: translateX(100%);
-  
-}
- 
-
-.menu-con-2 .content.active {
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-.menu-con-2 .content.exiting {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-
-.menu-con-2 img {
-  width: 150px;
-  height: auto;
-  
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-.menu-con-2 img:hover {
-  transform: scale(1.1);
-}
-.menu-con-2 h4{
-  font-size: 1.2vw;
-  font-weight: 100;
-  color: #ffffffab;
-  margin-top: 0.5vw;
-  cursor: pointer;
-  margin-left: 7vw;
-  transition: all ease 0.5s;
-  position: relative;
-  padding-bottom: 0.3vw;
-  
-}
-.menu-con-2 h4:hover{
-  color: #fff;
-}
-.menu-con-2 h4::after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  left: 0%;
-  bottom: -5%;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.4s ease-out;
-
-}
-.menu-con-2 h4:hover::after{
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}

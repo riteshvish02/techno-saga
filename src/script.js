@@ -28,31 +28,27 @@ function inet(){
     
     inet();
     const totalItems = 28;
-let loadingBarElement = document.querySelector("#progress")
-let loadingBarElementh2 = document.querySelector("#dib h2")
+let loadingBarElement = document.querySelector(".progress-bar")
+let loadingBarElementh2 = document.querySelector(".progress-bar h2")
     const loadingManager = new THREE.LoadingManager(
        // Loaded
     () =>
       {
-          // Wait a little
           if (isCarChanged) {
             // Hide the car loading progress bar after the model is changed
             document.querySelector(".carload").style.display = "none";
             isCarChanged = false; // Reset the flag after the car change
         }
-
-        // If it's the initial load, we hide the main loader and show the content
         if (isInitialLoad) {
             setTimeout(() => {
                 console.log('Initial load complete');
                 // Hide initial loader
                 var tl1 = gsap.timeline();
-                tl1.to('#loading #elem', {
-                    clipPath: `polygon(0 0, 0% 0, 0% 100%, 0% 100%)`,
-                    duration: 1.2,
-                    ease: "power4.out",
-                }, "var")
-                .to('#loading', { display: 'none', delay: 0.2 }, "var2")
+               tl1
+                .to("#loading .center-loading .text .text-left",{x:"-300"},"name")
+                .to("#loading .center-loading .text .text-right",{x:"400"},"name")
+                .to("#loading .center-loading .text .image img",{  transform: `translateY(-0%)`})
+                .to('#loading', { display: 'none', delay: 0.5 }, "var2")
                 .to('#selector,#nav', { display: 'flex', delay: 0.5 }, "var2");
                 // Hide the main loader once the page is ready
             }, 1000);
@@ -253,8 +249,8 @@ function adjustModelForScreen() {
   if (model) {
       const aspectRatio = window.matchMedia("(max-width: 768px)").matches
       if (aspectRatio) { // Portrait mode
-          model.scale.set(13, 13, 13)
-          model.position.set(0, -4, 0)
+          model.scale.set(7.9, 7.9, 7.9)
+          model.position.set(0, -8.9, 0)
       } else { // Landscape mode
           model.scale.set(25, 25, 25)
           model.position.set(0, 0, 0);
@@ -314,16 +310,28 @@ function animate() {
 }
 
 animate();
-
+let isMobileView = window.matchMedia("(max-width: 768px)").matches;
 // Resize handling
+
 window.addEventListener('resize', () => {
+    const wasMobileView = isMobileView;
+    isMobileView = window.matchMedia("(max-width: 768px)").matches;
+
+    // Check if the view mode has changed (mobile to desktop or vice versa)
+    if (wasMobileView !== isMobileView) {
+        window.location.reload(); // Reload the page on view change
+    }
+
+    // Update sizes and renderer
     sizes.width = window.innerWidth;
     sizes.height = window.innerHeight;
     camera.aspect = sizes.width / sizes.height;
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    adjustModelForScreen()
+
+    // Adjust the model based on the new screen size
+    adjustModelForScreen();
 });
 
 // const colors = ['#FFCC00', '#CC0033', 'black', '#A4C4B8', '#00194B', '#333333','red'];
